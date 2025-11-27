@@ -1,0 +1,8 @@
+# ignore Gemfile.lock
+Gemfile.lock
+
+#ignore generated website
+_site
+
+#ignore _config_yml
+_config.yml

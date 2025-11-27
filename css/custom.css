@@ -1,0 +1,165 @@
+:root {
+    --criar_purple: #5c068c;
+    --criar_orange: #ff8200;
+    --criar_red: #bf0d3e;
+}
+
+body {
+    background-color: #F7F7FF !important;
+}
+
+.depoimento_title {
+    margin-left: 20;
+    font-weight: 300;
+}
+
+.depoimento_texto {
+    text-align: justify;
+}
+
+.depoimento_carousel {
+    padding-top: 20;
+}
+
+.material_image {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* Got it from https://htmlcssfreebies.com/material-design-box-shadows/ */
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+.mobile_menu .dropdown-item {
+    padding-left: 20;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+
+    background: transparent !important;
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:focus {
+
+    background: transparent !important;
+    color: white !important;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .nav-item .nav-link:hover {
+
+    background: white !important;
+    color: black !important;
+}
+
+.subtext {
+    color: grey;
+}
+
+.publication_image {
+    margin-bottom: 10px;
+}
+
+.ranking_button {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-block: 1px solid rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-inline: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box !important;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-family: Avenir, -apple-system, system-ui, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 22px;
+    padding-block: 20px;
+    padding-inline: 20px;
+    text-decoration: none solid #FFF !important;
+    width: fit-content;
+}
+
+.read_publication_button {
+    width: fit-content;
+    align-items: center;
+    background-color: rgb(57, 67, 86);
+    border-radius: 6px;
+    border-width: 0px;
+    box-sizing: border-box;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-family: Lexend, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 21px;
+    padding-block: 10px;
+    padding-inline: 15px;
+    text-align: center;
+    text-decoration: none solid #FFF;
+}
+
+.read_publication_button .read_publication_button_image {
+    border-width: 0px;
+    box-sizing: border-box;
+    color: #FFF;
+    display: block;
+    height: 20px;
+    line-height: 21px;
+    margin-inline-end: 5px;
+    margin-right: 5px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    text-decoration: none solid #FFF;
+    width: 20px;
+}
+
+.header_section{
+    background-image: none !important;
+    background: linear-gradient(to right bottom,var(--criar_orange),var(--criar_red),var(--criar_purple)) !important;
+}
+
+.btn_main a{
+    background: purple;
+}
+
+.btn_main a:hover{
+    background: orangered;
+}
+
+.read_bt a:hover{
+    background: black !important;
+    color: white !important;
+}
+
+a:hover{
+    color: purple !important;
+}
+
+.copyright_section {
+    background-color: orangered;
+}
+
+.limit{
+  background: url("../images/iconography/background.png") 50% 50%;
+  background-size: cover;
+}
