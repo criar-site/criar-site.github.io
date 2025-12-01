@@ -133,25 +133,25 @@ body {
     width: 20px;
 }
 
-.header_section{
+.header_section {
     background-image: none !important;
-    background: linear-gradient(to right bottom,var(--criar_orange),var(--criar_red),var(--criar_purple)) !important;
+    background: linear-gradient(to right bottom, var(--criar_orange), var(--criar_red), var(--criar_purple)) !important;
 }
 
-.btn_main a{
+.btn_main a {
     background: purple;
 }
 
-.btn_main a:hover{
+.btn_main a:hover {
     background: orangered;
 }
 
-.read_bt a:hover{
+.read_bt a:hover {
     background: black !important;
     color: white !important;
 }
 
-a:hover{
+a:hover {
     color: purple !important;
 }
 
@@ -159,7 +159,12 @@ a:hover{
     background-color: orangered;
 }
 
-.limit{
-  background: url("../images/iconography/background.png") 50% 50%;
-  background-size: cover;
+.limit {
+    background: url("../images/iconography/background.png") 50% 50%;
+    background-size: cover;
+}
+
+.iconography_img {
+    text-align: center;
+    margin: auto;
 }

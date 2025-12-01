@@ -60,7 +60,7 @@
 			<div class="services_section_2">
 				<div class="row justify-content-center">
 					<div class="col-md-3 col-lg-2 col-5 align-self-center">
-						<div><img src="images/iconography/la_ursa_orange.png" class="services_img"></div>
+						<div><img src="images/iconography/la_ursa_orange.png" class="iconography_img"></div>
 					</div>
 					<div class="col-md-8 col-lg-9 col-xl-10 col-12 align-self-center">
 						<h2 class="text-center">Fotografia Computacional</h2 class="text-center">
@@ -71,8 +71,8 @@
 				</div>
 				<hr class="mt-5 mb-5" />
 				<div class="row justify-content-center">
-					<div class="col-md-3 col-lg-2 col-5 align-self-center">
-						<div><img src="images/iconography/antenna_purple.png" class="services_img"></div>
+					<div class="col-md-3 col-lg-2 col-5 align-self-center" style="text-align: center;">
+						<div><img src="images/iconography/antenna_purple.png" class="iconography_img"></div>
 					</div>
 					<div class="col-md-8 col-lg-9 col-xl-10 col-12 align-self-center">
 						<h2 class="text-center">Aprendizagem de Máquina e Profunda</h2 class="text-center">
@@ -84,7 +84,7 @@
 				<hr class="mt-5 mb-5" />
 				<div class="row justify-content-center">
 					<div class="col-md-3 col-lg-2 col-5 align-self-center">
-						<div><img src="images/iconography/alfaia_red.png" class="services_img"></div>
+						<div><img src="images/iconography/alfaia_red.png" class="iconography_img"></div>
 					</div>
 					<div class="col-md-8 col-lg-9 col-xl-10 col-12 align-self-center">
 						<h2 class="text-center">Linguagem de Programação Halide</h2 class="text-center">
@@ -96,7 +96,7 @@
 				<hr class="mt-5 mb-5" />
 				<div class="row justify-content-center">
 					<div class="col-md-3 col-lg-2 col-5 align-self-center">
-						<div><img src="images/iconography/manguebeat_orange.png" class="services_img"></div>
+						<div><img src="images/iconography/manguebeat_orange.png" class="iconography_img"></div>
 					</div>
 					<div class="col-md-8 col-lg-9 col-xl-10 col-12 align-self-center">
 						<h2 class="text-center">Análise e Performance de Sistemas Heterogêneos</h2 class="text-center">
@@ -108,7 +108,7 @@
 				<hr class="mt-5 mb-5" />
 				<div class="row justify-content-center">
 					<div class="col-md-3 col-lg-2 col-5 align-self-center">
-						<div><img src="images/iconography/responsible_ai_purple.png" class="services_img"></div>
+						<div><img src="images/iconography/responsible_ai_purple.png" class="iconography_img"></div>
 					</div>
 					<div class="col-md-8 col-lg-9 col-xl-10 col-12 align-self-center">
 						<h2 class="text-center">Análise e Performance de Sistemas com IA</h2 class="text-center">
@@ -120,7 +120,7 @@
 				<hr class="mt-5 mb-5" />
 				<div class="row justify-content-center">
 					<div class="col-md-3 col-lg-2 col-5 align-self-center">
-						<div><img src="images/iconography/wave_red.png" class="services_img"></div>
+						<div><img src="images/iconography/wave_red.png" class="iconography_img"></div>
 					</div>
 					<div class="col-md-8 col-lg-9 col-xl-10 col-12 align-self-center">
 						<h2 class="text-center">Análise de Qualidade de Imagem</h2 class="text-center">
@@ -162,7 +162,11 @@
 				var mobileModal = new bootstrap.Modal(document.getElementById('ModalIQA'));
 				mobileModal.show();
 			}
+		});
+
+		window.addEventListener("load", function () {
 			carouselNormalization();
+			fixImageHeights();
 		});
 
 		function carouselNormalization() {
@@ -187,14 +191,52 @@
 				});
 			};
 
+			function fixImageHeights() {
+				var imagens = $('.iconography_img'), //grab all images
+					tempHeight = 0,
+					tempWidth = 0;
+				imagens.each(function () {
+					$(this).css('width', '100%');
+					$(this).css('height', '');
+					tempHeight = $(this).height();
+					tempWidth = $(this).width();
+					if (tempHeight > tempWidth) {
+						$(this).css('height', tempWidth + 'px');
+						$(this).css('width', '');
+					}
+
+				})
+			};
+
 			$(window).on('resize orientationchange', function () {
 				tallest = 0, heights.length = 0; //reset vars
 				items.each(function () {
 					$(this).css('min-height', '0'); //reset min-height
 				});
-				normalizeHeights(); //run it again 
+				normalizeHeights(); //run it again
 			});
 		}
+
+		function fixImageHeights() {
+			var imagens = $('.iconography_img'), //grab all images
+				tempHeight = 0,
+				tempWidth = 0;
+			imagens.each(function () {
+				$(this).css('width', '100%');
+				$(this).css('height', '');
+				tempHeight = $(this).height();
+				tempWidth = $(this).width();
+				if (tempHeight > tempWidth) {
+					$(this).css('height', tempWidth + 'px');
+					$(this).css('width', '');
+				}
+
+			});
+
+			$(window).on('resize orientationchange', function () {
+				fixImageHeights();
+			});
+		};
 	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
