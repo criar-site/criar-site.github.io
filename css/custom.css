@@ -2,6 +2,8 @@
     --criar_purple: #5c068c;
     --criar_orange: #ff8200;
     --criar_red: #bf0d3e;
+    --criar_purple_50: #ae83c6;
+    --criar_purple_75: #8544a9;
 }
 
 body {
@@ -140,11 +142,11 @@ body {
 }
 
 .btn_main a {
-    background: purple;
+    background: var(--criar_purple);
 }
 
 .btn_main a:hover {
-    background: orangered;
+    background: var(--criar_orange);
 }
 
 .read_bt a:hover {
@@ -153,11 +155,11 @@ body {
 }
 
 a:hover {
-    color: purple !important;
+    color: var(--criar_purple) !important;
 }
 
 .copyright_section {
-    background-color: orangered;
+    background-color: var(--criar_orange);
 }
 
 .limit {
@@ -168,4 +170,41 @@ a:hover {
 .iconography_img {
     text-align: center;
     margin: auto;
+}
+
+.btn-group .btn-secondary,
+.btn-group-vertical .btn-secondary {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border: 0 !important;
+    background-color: var(--criar_purple_50) !important;
+    color: black !important;
+}
+
+.btn-group .active,
+.btn-group-vertical .active {
+    background-color: var(--criar_purple_75) !important;
+    color: white !important;
+}
+
+.btn-group .btn-secondary:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.btn-group .btn-secondary:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.btn-group-vertical .btn-secondary:first-child {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.btn-group-vertical .btn-secondary:last-child {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
 }
