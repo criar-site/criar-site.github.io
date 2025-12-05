@@ -95,24 +95,6 @@
 	<script src="js/custom.js"></script>
 	<!-- javascript -->
 	<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			// Ocultar todas as categorias, exceto a default
-			$('#pub_relatorios').hide();
-
-			$('.pub_button').on('change', function () {
-				var selectedOption = $('input[name="options"]:checked').val();
-				console.log(selectedOption);
-
-				// Esconde todas as categorias (não esqueça de adicionar categorias novas)
-				$('#pub_dermato').hide();
-				$('#pub_relatorios').hide();
-
-				// Mostra apenas a categoria de interesse
-				$('#pub_' + selectedOption).show();
-			});
-		});
-	</script>
 </body>
 
 </html>

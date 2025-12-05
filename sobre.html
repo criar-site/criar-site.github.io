@@ -62,27 +62,6 @@
    <script src="js/custom.js"></script>
    <!-- javascript -->
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-   <script>
-		document.addEventListener("DOMContentLoaded", function () {
-			backgroundFix();
-		});
-
-		function backgroundFix() {
-			var texto = $('#texto_sobre .row');
-         var background = $('#imagem_sobre .limit');
-			if (texto.height) {
-				backgroundHeight();
-			}
-			function backgroundHeight() {
-				height = texto.height();
-            background.css('height', height + 'px');
-			};
-
-			$(window).on('resize orientationchange', function () {
-				backgroundHeight(); //run it again 
-			});
-		}
-	</script>
 </body>
 
 </html>

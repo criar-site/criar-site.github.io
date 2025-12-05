@@ -96,24 +96,6 @@
 	{% include copyright.html %}
 	<!-- copyright section end -->
 	<!-- Javascript files-->
-	<script>
-		const resize_ob = new ResizeObserver(function (entries) {
-			// Como a seleção é de apenas um elemento, pegamos o primeiro item do array e definimos um objeto "rect" com as dimensões do slide
-			let rect = entries[0].contentRect;
-
-			// Pega a largura atual do slide
-			let width = rect.width;
-
-			// Calcula a altera pela proporção do slide (16:9) e acrescenta a dimensão da barra de navegação do Google Slides (32px)
-			let height = width / 16 * 9 + 32;
-
-			// Define a altura atualizada do slide
-			document.getElementById('apresentacao_rag').setAttribute('height', height)
-		});
-
-		// Observa as mudanças de dimensão
-		resize_ob.observe(document.querySelector("#apresentacao_rag"));
-	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
