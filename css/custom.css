@@ -162,8 +162,13 @@ a:hover {
     background-color: var(--criar_orange);
 }
 
-.limit {
+.limit2 {
     background: url("../images/iconography/background.png") 50% 50%;
+    background-size: cover;
+}
+
+.limit {
+    background: url("../images/iconography/padronagem_fluida.png") 50% 50%;
     background-size: cover;
 }
 
