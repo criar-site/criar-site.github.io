@@ -162,22 +162,19 @@ a:hover {
     background-color: var(--criar_orange);
 }
 
-.limit2 {
-    background-image: url("../images/iconography/background.png");
+.background_limit {
     background-size: cover;
     background-position: center;
-    /* Ensure the inner element fills the wrapper's content area */
     height: 100%;
     width: 100%;
 }
 
-.limit {
+.background_fluid {
     background-image: url("../images/iconography/padronagem_fluida.png");
-    background-size: cover;
-    background-position: center;
-    /* Ensure the inner element fills the wrapper's content area */
-    height: 100%;
-    width: 100%;
+}
+
+.background_iconography {
+    background-image: url("../images/iconography/background.png");
 }
 
 .iconography_img {
@@ -226,6 +223,6 @@ a:hover {
     font-size: 1rem !important;
 }
 
-.logo_mobile{
+.logo_mobile {
     padding-left: 10px !important;
 }
