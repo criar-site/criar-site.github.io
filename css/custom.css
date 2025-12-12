@@ -104,7 +104,7 @@ body {
 .read_publication_button {
     width: fit-content;
     align-items: center;
-    background-color: rgb(57, 67, 86);
+    background-color: var(--criar_purple_75);
     border-radius: 6px;
     border-width: 0px;
     box-sizing: border-box;
@@ -154,8 +154,14 @@ body {
     color: white !important;
 }
 
-a:hover {
+.btn_main a:hover {
     color: var(--criar_purple) !important;
+}
+
+a.read_publication_button:hover{
+    background-color: var(--criar_purple);
+    color: white !important;
+    box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5);
 }
 
 .copyright_section {
@@ -196,6 +202,20 @@ a:hover {
     color: black !important;
 }
 
+.btn-group .btn-secondary {
+    border-left: 1px solid #000 !important;
+    border-right: 1px solid #000 !important;
+}
+
+.btn-group-vertical .btn-secondary {
+    border-top: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5);
+}
+
 .btn-group .active,
 .btn-group-vertical .active {
     background-color: var(--criar_purple_75) !important;
@@ -205,27 +225,31 @@ a:hover {
 .btn-group .btn-secondary:first-child {
     border-top-left-radius: 10px !important;
     border-bottom-left-radius: 10px !important;
+    border-left: 0px !important;
 }
 
 .btn-group .btn-secondary:last-child {
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
+    border-right: 0px !important;
 }
 
 .btn-group-vertical .btn-secondary:first-child {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
+    border-top: 0px !important;
 }
 
 .btn-group-vertical .btn-secondary:last-child {
     border-bottom-left-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
+    border-bottom: 0px !important;
 }
 
 .material-symbols-outlined {
     font-size: 1rem !important;
 }
 
-.logo_mobile{
+.logo_mobile {
     padding-left: 10px !important;
 }
