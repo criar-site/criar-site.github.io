@@ -375,18 +375,28 @@ $(function () {
 
 /*corrigindo problema com animação inconsistente no dropdown*/
 
-const target = document.getElementById('menu_dropdown');
-const observer = new MutationObserver(callback);
+const target_solucoes = document.getElementById('menu_dropdown_solucoes');
+const observer_solucoes = new MutationObserver(callback);
+const target_sobre = document.getElementById('menu_dropdown_sobre');
+const observer_sobre = new MutationObserver(callback);
 
-observer.observe(target, { attributes: true });
+observer_solucoes.observe(target_solucoes, { attributes: true });
+observer_sobre.observe(target_sobre, { attributes: true });
 
 function callback(mutations) {
-	if (!target.classList.contains('show')) {
-		target.style.removeProperty('position');
-		target.style.removeProperty('transform');
-		target.style.removeProperty('top');
-		target.style.removeProperty('left');
-		target.style.removeProperty('will-change');
+	if (!target_solucoes.classList.contains('show')) {
+		target_solucoes.style.removeProperty('position');
+		target_solucoes.style.removeProperty('transform');
+		target_solucoes.style.removeProperty('top');
+		target_solucoes.style.removeProperty('left');
+		target_solucoes.style.removeProperty('will-change');
+	}
+	if (!target_sobre.classList.contains('show')) {
+		target_sobre.style.removeProperty('position');
+		target_sobre.style.removeProperty('transform');
+		target_sobre.style.removeProperty('top');
+		target_sobre.style.removeProperty('left');
+		target_sobre.style.removeProperty('will-change');
 	}
 }
 
@@ -400,6 +410,14 @@ function carouselNormalization() {
 
 	if (items.length) {
 		normalizeHeights();
+		$(window).on('resize orientationchange', function () {
+			console.log("será?");
+			tallest = 0, heights.length = 0; //reset vars
+			items.each(function () {
+				$(this).css('min-height', '0'); //reset min-height
+			});
+			normalizeHeights(); //run it again
+		});
 	}
 
 	function normalizeHeights() {
@@ -413,14 +431,6 @@ function carouselNormalization() {
 			$(this).css('min-height', tallest + 'px');
 		});
 	};
-
-	$(window).on('resize orientationchange', function () {
-		tallest = 0, heights.length = 0; //reset vars
-		items.each(function () {
-			$(this).css('min-height', '0'); //reset min-height
-		});
-		normalizeHeights(); //run it again
-	});
 }
 
 /*ajusta a proporção das imagens de iconografia quando tem redimensionamento da janela*/
