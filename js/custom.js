@@ -411,7 +411,6 @@ function carouselNormalization() {
 	if (items.length) {
 		normalizeHeights();
 		$(window).on('resize orientationchange', function () {
-			console.log("será?");
 			tallest = 0, heights.length = 0; //reset vars
 			items.each(function () {
 				$(this).css('min-height', '0'); //reset min-height
@@ -479,7 +478,6 @@ $(document).ready(function () {
 
 	$('.pub_button').on('change', function () {
 		var selectedOption = $('input[name="options"]:checked').val();
-		console.log(selectedOption);
 
 		// Esconde todas as categorias (não esqueça de adicionar categorias novas)
 		$('#pub_dermato').hide();
