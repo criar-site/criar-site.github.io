@@ -437,11 +437,6 @@ function fixImageHeights() {
 			$(this).css('height', tempWidth + 'px');
 			$(this).css('width', '');
 		}
-
-	});
-
-	$(window).on('resize orientationchange', function () {
-		fixImageHeights();
 	});
 };
 
@@ -515,4 +510,10 @@ window.addEventListener("load", function () {
 	carouselNormalization();
 	fixImageHeights();
 	resizeSlide();
+});
+
+/*funções que devem ser executadas a cada redimensionamento da janela*/
+
+$(window).on('resize orientationchange', function () {
+	fixImageHeights();
 });
