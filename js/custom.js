@@ -482,6 +482,8 @@ $(document).ready(function () {
 		// Esconde todas as categorias (não esqueça de adicionar categorias novas)
 		$('#pub_dermato').hide();
 		$('#pub_relatorios').hide();
+		$('#pub_roboticaIA').hide();
+		$('#pub_visao').hide();
 
 		// Mostra apenas a categoria de interesse
 		$('#pub_' + selectedOption).show();
