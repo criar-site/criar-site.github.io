@@ -490,6 +490,18 @@ $(document).ready(function () {
 	});
 });
 
+function keepSelectedPubButton() {
+	categorias = $('.publication_category');
+	categorias.each(function () {
+		category = $(this).attr('id').replace("pub_", "");
+		if ($(this).css('display') == 'none') {
+			$(".pub_button[value='"+category+"']").parent().removeClass("active");
+		} else if ($(this).css('display') == 'block'){
+			$(".pub_button[value='"+category+"']").parent().addClass("active");
+		}
+	})
+}
+
 /*abre os modais dos cursos quando o id é adicionado à url*/
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -526,4 +538,5 @@ window.addEventListener("load", function () {
 
 $(window).on('resize orientationchange', function () {
 	fixImageHeights();
+	keepSelectedPubButton();
 });
