@@ -158,7 +158,7 @@ body {
     color: var(--criar_purple) !important;
 }
 
-a.read_publication_button:hover{
+a.read_publication_button:hover {
     background-color: var(--criar_purple);
     color: white !important;
     box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5);
@@ -249,4 +249,10 @@ a.read_publication_button:hover{
 
 .logo_mobile {
     padding-left: 10px !important;
+}
+
+/* To fix the social media icons on footer */
+.location_main h2 img {
+    height: 1em;
+    width: auto;
 }
