@@ -379,9 +379,12 @@ const target_solucoes = document.getElementById('menu_dropdown_solucoes');
 const observer_solucoes = new MutationObserver(callback);
 const target_sobre = document.getElementById('menu_dropdown_sobre');
 const observer_sobre = new MutationObserver(callback);
+const target_cursos = document.getElementById('menu_dropdown_cursos');
+const observer_cursos = new MutationObserver(callback);
 
 observer_solucoes.observe(target_solucoes, { attributes: true });
 observer_sobre.observe(target_sobre, { attributes: true });
+observer_cursos.observe(target_cursos, { attributes: true });
 
 function callback(mutations) {
 	if (!target_solucoes.classList.contains('show')) {
@@ -397,6 +400,13 @@ function callback(mutations) {
 		target_sobre.style.removeProperty('top');
 		target_sobre.style.removeProperty('left');
 		target_sobre.style.removeProperty('will-change');
+	}
+	if (!target_cursos.classList.contains('show')) {
+		target_cursos.style.removeProperty('position');
+		target_cursos.style.removeProperty('transform');
+		target_cursos.style.removeProperty('top');
+		target_cursos.style.removeProperty('left');
+		target_cursos.style.removeProperty('will-change');
 	}
 }
 
