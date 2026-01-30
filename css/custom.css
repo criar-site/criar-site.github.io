@@ -265,9 +265,7 @@ a.read_publication_button:hover{
 
 .video-frame:hover, 
 .video-frame-vertical:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(92, 6, 140, 0.2); 
-    border: 1px solid rgba(92, 6, 140, 0.1);
+    box-shadow: 0 15px 35px rgba(40, 2, 61, 0.2); 
 }
 
 .video-frame {
