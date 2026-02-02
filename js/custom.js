@@ -485,6 +485,8 @@ function resizeSlide() {
 $(document).ready(function () {
 	// Ocultar todas as categorias, exceto a default
 	$('#pub_relatorios').hide();
+	$('#pub_roboticaIA').hide();
+	$('#pub_visao').hide();
 
 	$('.pub_button').on('change', function () {
 		var selectedOption = $('input[name="options"]:checked').val();
