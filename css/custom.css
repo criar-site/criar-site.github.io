@@ -255,4 +255,37 @@ a.read_publication_button:hover {
 .location_main h2 img {
     height: 1em;
     width: auto;
+
+/* Adding custom css to better frame videos on the whole website */
+.video-frame, 
+.video-frame-vertical {
+    position: relative;
+    padding: 10px; 
+    background: #fff; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+.video-frame:hover, 
+.video-frame-vertical:hover {
+    box-shadow: 0 15px 35px rgba(40, 2, 61, 0.2); 
+}
+
+.video-frame {
+    max-width: 560px; 
+}
+
+.video-frame-vertical {
+    max-width: 320px; 
+}
+
+.video-frame video, .video-frame img,
+.video-frame-vertical video, .video-frame-vertical img {
+    border-radius: 15px; 
+    display: block;
+    width: 100%;
+    height: auto;
 }
