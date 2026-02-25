@@ -146,11 +146,6 @@
     .readmore_bt {
         margin-top: 30px;
     }
-    .blog_section {
-        background-size: 100% 100%;
-        padding-bottom: 220px;
-        padding-top: 160px;
-    }
     .play_icon_main {
         margin-top: 50px;
     }
@@ -219,11 +214,6 @@
     .about_img {
         height: 340px;
     }
-    .blog_section {
-        background-size: 100% 100%;
-        padding-bottom: 220px;
-        padding-top: 160px;
-    }
     .play_icon_main {
         margin-top: 50px;
     }
@@ -288,7 +278,6 @@
         display: none;
     }
     .header_section {
-        background-image: url(../images/mobile-bg.png);
         background-size: cover;
         padding: 0px;
     }
@@ -372,11 +361,6 @@
     }
     .padding_right_0 {
         padding-right: 15px;
-    }
-    .blog_section {
-        background-image: url(../images/blog-mobile-bg.png);
-        background-size: cover;
-        padding: 50px 0px;
     }
     .blog_text {
         width: 100%;
@@ -487,7 +471,6 @@
         display: none;
     }
     .header_section {
-        background-image: url(../images/mobile-bg.png);
         background-size: cover;
         padding: 0px; 
     }
@@ -570,11 +553,6 @@
     }
     .padding_right_0 {
         padding-right: 15px;
-    }
-    .blog_section {
-        background-image: url(../images/blog-mobile-bg.png);
-        background-size: cover;
-        padding: 50px 0px;
     }
     .blog_text {
         width: 100%;
