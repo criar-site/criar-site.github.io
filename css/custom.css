@@ -138,7 +138,7 @@ body {
 
 .header_section {
     background-image: none !important;
-    background: linear-gradient(to right bottom, var(--criar_orange), var(--criar_red), var(--criar_purple)) !important;
+    background: linear-gradient(to right bottom, var(--criar_purple) 0%, var(--criar_red) 60%, var(--criar_red) 75%, var(--criar_orange) 100%) !important;
 }
 
 .btn_main a {
@@ -165,7 +165,7 @@ a.read_publication_button:hover {
 }
 
 .copyright_section {
-    background-color: var(--criar_orange);
+    background-color: var(--criar_purple);
 }
 
 .background_limit {
