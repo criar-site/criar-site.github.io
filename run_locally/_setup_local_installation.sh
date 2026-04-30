@@ -14,6 +14,9 @@ gem install jekyll bundler
 # cd REPOSITORY_FOLDER
 cp ./run_locally/default_config.yml ./_config.yml
 
+# Generate gallery.html
+ruby ./_includes/_generate_gallery.rb
+
 # On your repository folder, install github pages gem and its dependencies
 bundle install
 
