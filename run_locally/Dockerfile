@@ -12,6 +12,8 @@ ENV LC_ALL=pt_BR.UTF-8 LANG=pt_BR.UTF-8 LANGUAGE=pt_BR.UTF-8
 WORKDIR /app
 COPY . /app
 RUN cp ./run_locally/default_config.yml ./_config.yml
+# Generate gallery.html
+RUN ruby ./_includes/_generate_gallery.rb
 
 RUN gem install jekyll bundler
 
