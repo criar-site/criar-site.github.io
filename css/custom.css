@@ -345,3 +345,7 @@ a.read_publication_button:hover {
 }
 
 /* End of content for Photo Gallery */
+
+.img-fluid {
+    border-radius: 15px;
+}
