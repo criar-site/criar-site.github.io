@@ -1,6 +1,18 @@
 {
     "galeria": [
         {
+            "foto_caminho": "ISBI_1.jpg",
+            "foto_legenda": "Participação dos Pesquisadores Kelvin Cunha e Rodrigo Mota na Conferência ISBI 2026 - Maio de 2026"
+        },
+        {
+            "foto_caminho": "ISBI_2.jpg",
+            "foto_legenda": "Apresentação Oral na Conferência ISBI 2026 pelo Pesquisador Kelvin Cunha - Maio de 2026"
+        },
+        {
+            "foto_caminho": "ISBI_3.jpg",
+            "foto_legenda": "Apresentação de Pôster na Conferência ISBI 2026 pelo Pesquisador Rodrigo Mota - Maio de 2026"
+        },
+        {
             "foto_caminho": "photo_5158933236867075040_y.jpg",
             "foto_legenda": "Onboarding da Implantação do sistema de separação de medicamentos, no HC-UFPE - Março de 2026"
         },
