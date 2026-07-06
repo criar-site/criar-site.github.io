@@ -1,3 +1,5 @@
+# This script automatically generates the page copyright.html everytime the website is run locally
+
 require 'date'
 
 year = Date.today.year.to_s

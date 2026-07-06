@@ -1,3 +1,5 @@
+# This script automatically generates the page gallery.html everytime the website is run locally
+
 require 'json'
 
 json_file = File.join(File.dirname(__FILE__), 'gallery.json')

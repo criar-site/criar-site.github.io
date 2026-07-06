@@ -545,11 +545,21 @@ document.addEventListener("DOMContentLoaded", function () {
 function lightboxSettings() {
 	lightbox.option({
 		'albumLabel': "Imagem %1 de %2",
-		'fadeDuration': 300,
+		'fadeDuration': 200,
 		'wrapAround': true,
 		'maxHeight': 675,
 		'maxwidth': 1200
 	});
+}
+
+function closeLightbox(){
+	const lightbox = document.querySelector('.lightbox');
+	const lightboxOverlay = document.querySelector('.lightboxOverlay');
+    
+    if (lightbox && lightbox.style.display !== 'none') {
+        lightbox.style.display = 'none'; 
+		lightboxOverlay.style.display = 'none'; 
+    }
 }
 
 /*funções que devem ser executadas assim que a página for completamente carregada*/
@@ -566,4 +576,5 @@ window.addEventListener("load", function () {
 $(window).on('resize orientationchange', function () {
 	fixImageHeights();
 	keepSelectedPubButton();
+	closeLightbox();
 });
