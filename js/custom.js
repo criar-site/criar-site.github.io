@@ -543,23 +543,25 @@ document.addEventListener("DOMContentLoaded", function () {
 /* configurações do Lightbox para a Galeria */
 
 function lightboxSettings() {
-	lightbox.option({
-		'albumLabel': "Imagem %1 de %2",
-		'fadeDuration': 200,
-		'wrapAround': true,
-		'maxHeight': 675,
-		'maxwidth': 1200
-	});
+	if ($('#lightboxContainer').lenght) { //checks if lightbox exists
+		lightbox.option({
+			'albumLabel': "Imagem %1 de %2",
+			'fadeDuration': 200,
+			'wrapAround': true,
+			'maxHeight': 675,
+			'maxwidth': 1200
+		});
+	}
 }
 
-function closeLightbox(){
+function closeLightbox() {
 	const lightbox = document.querySelector('.lightbox');
 	const lightboxOverlay = document.querySelector('.lightboxOverlay');
-    
-    if (lightbox && lightbox.style.display !== 'none') {
-        lightbox.style.display = 'none'; 
-		lightboxOverlay.style.display = 'none'; 
-    }
+
+	if (lightbox && lightbox.style.display !== 'none') {
+		lightbox.style.display = 'none';
+		lightboxOverlay.style.display = 'none';
+	}
 }
 
 /*funções que devem ser executadas assim que a página for completamente carregada*/
