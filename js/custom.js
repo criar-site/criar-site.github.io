@@ -477,7 +477,9 @@ function resizeSlide() {
 	});
 
 	// Observa as mudanças de dimensão
-	resize_ob.observe(document.querySelector("#apresentacao_rag"));
+	if ($("#apresentacao_rag").length) {
+		resize_ob.observe(document.querySelector("#apresentacao_rag"));
+	}
 }
 
 /*na página de publicações, esconde e mostra as categorias corretas*/
@@ -507,9 +509,9 @@ function keepSelectedPubButton() {
 	categorias.each(function () {
 		category = $(this).attr('id').replace("pub_", "");
 		if ($(this).css('display') == 'none') {
-			$(".pub_button[value='"+category+"']").parent().removeClass("active");
-		} else if ($(this).css('display') == 'block'){
-			$(".pub_button[value='"+category+"']").parent().addClass("active");
+			$(".pub_button[value='" + category + "']").parent().removeClass("active");
+		} else if ($(this).css('display') == 'block') {
+			$(".pub_button[value='" + category + "']").parent().addClass("active");
 		}
 	})
 }
@@ -538,12 +540,37 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 });
 
+/* configurações do Lightbox para a Galeria */
+
+function lightboxSettings() {
+	if ($('#lightboxContainer').lenght) { //checks if lightbox exists
+		lightbox.option({
+			'albumLabel': "Imagem %1 de %2",
+			'fadeDuration': 200,
+			'wrapAround': true,
+			'maxHeight': 675,
+			'maxwidth': 1200
+		});
+	}
+}
+
+function closeLightbox() {
+	const lightbox = document.querySelector('.lightbox');
+	const lightboxOverlay = document.querySelector('.lightboxOverlay');
+
+	if (lightbox && lightbox.style.display !== 'none') {
+		lightbox.style.display = 'none';
+		lightboxOverlay.style.display = 'none';
+	}
+}
+
 /*funções que devem ser executadas assim que a página for completamente carregada*/
 
 window.addEventListener("load", function () {
 	carouselNormalization();
 	fixImageHeights();
 	resizeSlide();
+	lightboxSettings();
 });
 
 /*funções que devem ser executadas a cada redimensionamento da janela*/
@@ -551,4 +578,5 @@ window.addEventListener("load", function () {
 $(window).on('resize orientationchange', function () {
 	fixImageHeights();
 	keepSelectedPubButton();
+	closeLightbox();
 });
