@@ -543,13 +543,14 @@ document.addEventListener("DOMContentLoaded", function () {
 /* configurações do Lightbox para a Galeria */
 
 function lightboxSettings() {
-	if ($('#lightboxContainer').lenght) { //checks if lightbox exists
+	if ($("#lightboxContainer").length) { //checks if lightbox exists
 		lightbox.option({
 			'albumLabel': "Imagem %1 de %2",
 			'fadeDuration': 200,
 			'wrapAround': true,
-			'maxHeight': 675,
-			'maxwidth': 1200
+			'maxHeight': window.innerHeight * 0.8,
+			'maxwidth': window.innerWidth * 0.8,
+			scalePhotos: true
 		});
 	}
 }
@@ -562,6 +563,8 @@ function closeLightbox() {
 		lightbox.style.display = 'none';
 		lightboxOverlay.style.display = 'none';
 	}
+
+	lightboxSettings(); // Recalculate current window width to determine new height and width limits
 }
 
 /*funções que devem ser executadas assim que a página for completamente carregada*/
