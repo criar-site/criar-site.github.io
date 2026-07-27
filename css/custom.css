@@ -250,6 +250,12 @@ a.read_publication_button:hover {
     font-size: 1rem !important;
 }
 
+.material-icons {
+    line-height: 24px !important;
+    display: inline-flex !important;
+    vertical-align: text-bottom !important;
+}
+
 .logo_mobile {
     padding-left: 10px !important;
 }
