@@ -6,6 +6,10 @@
     --criar_purple_75: #8544a9;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 body {
     background-color: #F7F7FF !important;
 }
