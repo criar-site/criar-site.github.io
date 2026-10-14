@@ -15,6 +15,7 @@ RUN cp ./run_locally/default_config.yml ./_config.yml
 # Generate dynamic pages
 RUN ruby ./_includes/_generate_gallery.rb
 RUN ruby ./_includes/_generate_copyright.rb
+RUN ruby ./_includes/_generate_people.rb
 
 RUN gem install jekyll bundler
 

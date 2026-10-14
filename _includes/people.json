@@ -1,0 +1,283 @@
+{
+    "categorias": [
+        {
+            "nome": "Coordenação",
+            "membros": [
+                {
+                    "nome": "Alexandre Mota",
+                    "cargo": "Coordenador",
+                    "imagem": "images/pessoas/Alexandre.jpg",
+                    "perfil_url": "https://www.cin.ufpe.br/~acm/"
+                },
+                {
+                    "nome": "Paulo Borba",
+                    "cargo": "Vice-Coordenador",
+                    "imagem": "images/pessoas/Paulo.jpg",
+                    "perfil_url": "https://pauloborba.cin.ufpe.br/"
+                },
+                {
+                    "nome": "Augusto Sampaio",
+                    "cargo": "Cientista-Chefe",
+                    "imagem": "images/pessoas/Augusto.jpg",
+                    "perfil_url": "https://portal.cin.ufpe.br/staff/?alias=acas"
+                },
+                {
+                    "nome": "Tsang Ing Ren",
+                    "cargo": "Cientista-Chefe",
+                    "imagem": "images/pessoas/Tsang.jpg",
+                    "perfil_url": "https://portal.cin.ufpe.br/staff/?alias=tir"
+                }
+            ]
+        },
+        {
+            "nome": "Administrativo",
+            "membros": [
+                {
+                    "nome": "Bruna Costa",
+                    "cargo": "Assistente Administrativa",
+                    "imagem": "images/pessoas/Bruna.jpg"
+                },
+                {
+                    "nome": "Juana Moura",
+                    "cargo": "Analista de Capital Humano",
+                    "imagem": "images/pessoas/Juana.jpg"
+                }
+            ]
+        },
+        {
+            "nome": "Liderança",
+            "membros": [
+                {
+                    "nome": "Audir Paiva",
+                    "cargo": "Gerente de Projetos",
+                    "imagem": "images/pessoas/Audir.jpg"
+                },
+                {
+                    "nome": "Eduardo Tavares",
+                    "cargo": "Gerente de Projetos",
+                    "imagem": "images/pessoas/Eduardo.jpg"
+                },
+                {
+                    "nome": "Érico Medeiros",
+                    "cargo": "Gerente de Projetos",
+                    "imagem": "images/pessoas/Erico.jpg"
+                },
+                {
+                    "nome": "Kelvin Cunha",
+                    "cargo": "Líder Técnico",
+                    "imagem": "images/pessoas/Kelvin.jpg"
+                },
+                {
+                    "nome": "Lucas Pontes",
+                    "cargo": "Líder Técnico",
+                    "imagem": "images/pessoas/Lucas Pontes.jpg"
+                },
+                {
+                    "nome": "Mateus Baltazar",
+                    "cargo": "Líder Técnico",
+                    "imagem": "images/pessoas/Mateus.jpg"
+                }
+            ]
+        },
+        {
+            "nome": "Criadores de Sistemas",
+            "membros": [
+                {
+                    "nome": "Ivson Lima",
+                    "cargo": "Engenheiro de Software",
+                    "imagem": "images/pessoas/Ivson.jpg"
+                },
+                {
+                    "nome": "Jairton Filho",
+                    "cargo": "Engenheiro de Software",
+                    "imagem": "images/pessoas/Jairton.jpg"
+                },
+                {
+                    "nome": "Jefferson Norberto",
+                    "cargo": "Engenheiro de Software",
+                    "imagem": "images/pessoas/Jefferson.jpg"
+                },
+                {
+                    "nome": "Lucas Silva",
+                    "cargo": "Engenheiro de Software",
+                    "imagem": "images/pessoas/Lucas Silva.jpg"
+                },
+                {
+                    "nome": "Nathália Araújo",
+                    "cargo": "Engenheiro de Software",
+                    "imagem": "images/pessoas/Nathalia.jpg"
+                },
+                {
+                    "nome": "Pedro Mendonça",
+                    "cargo": "Engenheiro de Software",
+                    "imagem": "images/pessoas/Pedro.jpg"
+                }
+            ]
+        },
+        {
+            "nome": "Pesquisa, Desenvolvimento e Inovação",
+            "membros": [
+                {
+                    "nome": "Adrien Durand-Petiteville",
+                    "cargo": "Professor Pesquisador",
+                    "imagem": "images/pessoas/Adrien.jpg"
+                },
+                {
+                    "nome": "Breno Miranda",
+                    "cargo": "Professor Pesquisador",
+                    "imagem": "images/pessoas/Breno.jpg"
+                },
+                {
+                    "nome": "Carlos Alexandre",
+                    "cargo": "Professor Pesquisador",
+                    "imagem": "images/pessoas/Carlos.jpg"
+                },
+                {
+                    "nome": "Beatriz Barros",
+                    "cargo": "Aluna Pesquisadora",
+                    "imagem": "images/pessoas/Beatriz.jpg"
+                },
+                {
+                    "nome": "Davi Freitas",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Davi.jpg"
+                },
+                {
+                    "nome": "Emanoel Thyago",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Emanoel.jpg"
+                },
+                {
+                    "nome": "Fábio Papais",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Fabio.jpg"
+                },
+                {
+                    "nome": "Fernanda Neves",
+                    "cargo": "Aluna Pesquisadora",
+                    "imagem": "images/pessoas/Fernanda Neves.jpg"
+                },
+                {
+                    "nome": "João Pedro Mafaldo",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/João Pedro.jpg"
+                },
+                {
+                    "nome": "João Victor Oliveira",
+                    "cargo": "Desenvolvedor",
+                    "imagem": "images/pessoas/Joao_Victor.jpg"
+                },
+                {
+                    "nome": "José Gabriel Tavares",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Gabriel.jpg"
+                },
+                {
+                    "nome": "Kauã Lima",
+                    "cargo": "Desenvolvedor",
+                    "imagem": "images/pessoas/Kaua.jpg"
+                },
+                {
+                    "nome": "Luis Trevisan",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Luis Trevisan.jpg"
+                },
+                {
+                    "nome": "Lyssa Rodrigues",
+                    "cargo": "Aluna Pesquisadora",
+                    "imagem": "images/pessoas/Lyssa.jpg"
+                },
+                {
+                    "nome": "Mateus Tavares",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Mateus_Tavares.jpg"
+                },
+                {
+                    "nome": "Matheus Ayres",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Matheus.jpg"
+                },
+                {
+                    "nome": "Pedro César Rodrigues",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Pedro Cesar.jpg"
+                },
+                {
+                    "nome": "Rafael Barros",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Rafael.jpg"
+                },
+                {
+                    "nome": "Rafaela Almeida",
+                    "cargo": "Analista de Qualidade",
+                    "imagem": "images/pessoas/Rafaela Almeida.jpg"
+                },
+                {
+                    "nome": "Rodrigo Abreu",
+                    "cargo": "Aluno Pesquisador",
+                    "imagem": "images/pessoas/Rodrigo.jpg"
+                },
+                {
+                    "nome": "Vitória Rocha",
+                    "cargo": "Aluna Pesquisadora",
+                    "imagem": "images/pessoas/Vitoria.jpg"
+                }
+            ]
+        },
+        {
+            "nome": "Residentes Turma 4",
+            "membros": [
+                {
+                    "nome": "Alex Cavalcanti",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Alex Cavalcanti.jpg"
+                },
+                {
+                    "nome": "Daniela Amorim",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Daniela.jpg"
+                },
+                {
+                    "nome": "Everthon Inácio",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Everthon.jpg"
+                },
+                {
+                    "nome": "Gabriel Cileno",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/gabrielCileno.jpg"
+                },
+                {
+                    "nome": "Luiz Cordeiro",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Luiz-Cordeiro.jpg"
+                },
+                {
+                    "nome": "Luyara Muniz",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Luyara Muniz.jpg"
+                },
+                {
+                    "nome": "Marianne Felix",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Marianne Felix.jpg"
+                },
+                {
+                    "nome": "Rennan Lino",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Rennan-Lino.jpg"
+                },
+                {
+                    "nome": "Tamyres Bezerra",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/tamyres.jpg"
+                },
+                {
+                    "nome": "Tatiana Costa",
+                    "cargo": "Residente",
+                    "imagem": "images/pessoas/Tatiana.png"
+                }
+            ]
+        }
+    ]
+}
