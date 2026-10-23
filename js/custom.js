@@ -432,12 +432,18 @@ function carouselNormalization() {
 	function normalizeHeights() {
 		items.each(function () { //add heights to array
 			// if active testimony is the tallest, fixes object height by adding 20 px
-			height = $(this).hasClass('active') ? $(this).height() + 20 : $(this).height();
+			height = $(this).height();
 			heights.push(height);
 		});
-		tallest = Math.max.apply(null, heights) + 20 + 20; //cache largest value + top padding + extra bottom padding
+		tallest = Math.max.apply(null, heights) + 30 +30; //cache largest value + top padding + extra bottom padding
 		items.each(function () {
-			$(this).css('min-height', tallest + 'px');
+			spacing = (tallest - $(this).height()) / 2;
+			$(this).css({
+				'margin-top': spacing + 'px',
+				'margin-right': '0px',
+				'margin-bottom': spacing + 'px',
+				'margin-left': '0px'
+			});
 		});
 	};
 }
