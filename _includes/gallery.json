@@ -1,16 +1,20 @@
 {
     "galeria": [
         {
+            "foto_caminho": "MICCAI.jpg",
+            "foto_legenda": "Professor Tsang Ing Ren e aluno Emanoel Thyago dos Santos no MICCAI 2026 - Outubro de 2026"
+        },
+        {
             "foto_caminho": "20260616_155353.jpg",
-            "foto_legenda": "Alunas Beatriz Barros e Fernanda Neves na 2ª Jornada de Pesquisa da Graduação do CIn-UFPE- Junho de 2026"
+            "foto_legenda": "Alunas Beatriz Barros e Fernanda Neves na 2ª Jornada de Pesquisa da Graduação do CIn-UFPE - Junho de 2026"
         },
         {
             "foto_caminho": "20260611_145435.jpg",
-            "foto_legenda": "Aluno Luís Trevisan na 2ª Jornada de Pesquisa da Graduação do CIn-UFPE- Junho de 2026"
+            "foto_legenda": "Aluno Luís Trevisan na 2ª Jornada de Pesquisa da Graduação do CIn-UFPE - Junho de 2026"
         },
         {
             "foto_caminho": "20260611_160309.jpg",
-            "foto_legenda": "Aluno Matheus Ayres na 2ª Jornada de Pesquisa da Graduação do CIn-UFPE- Junho de 2026"
+            "foto_legenda": "Aluno Matheus Ayres na 2ª Jornada de Pesquisa da Graduação do CIn-UFPE - Junho de 2026"
         },
         {
             "foto_caminho": "IMG_20260527_202127794_MFNR.jpg",
